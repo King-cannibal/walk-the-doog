@@ -1,0 +1,55 @@
+.pony {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 5.5%;
+   background-color: black;
+   color: white;
+   text-align: ;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 400px black;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:  #b30000 ;
+}
+.not5 {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 0;
+   background-color:yellow;
+   color: black;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 5.5%;
+   background-color: lightgrey;
+   color: white;
+   text-align: ;
+}
+body {
+  background-image: url("https://live.staticflickr.com/65535/51333648451_d5d0d45b71_o.jpg");
+  background-repeat: repeat;
+  background-position: right top;
+  margin-right: 20px;
+}
