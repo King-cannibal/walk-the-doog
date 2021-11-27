@@ -57,7 +57,21 @@ body {
       margin: 10px;
       float: left;
   }
+.switch {
+  background-color: lightblue;
+  width: 120px;
+  height 120px;
+  padding: 10px;
+  margin: 10px;
+  float: top;
+}
  </style>
+ <switch
+  <button onclick="changeImage""changeImage2""changeImage3""changeImage4">
+switch!
+  </button>
+
+
 </head>
 <body>
 
@@ -121,18 +135,67 @@ run body {
     font-family: 'Akronim';font-size: 22px;
 }
 </style>
- <div id="link" style="position: relative; transform: translateX(0px);">
+<p id="demo">This abc will be reaplce by balck from abc black.</p>
+<button onclick="myFunction1()">Try to press!</button>
+<div id="link" style="position: relative; transform: translateX(0px);">
 <img src="https://live.staticflickr.com/65535/51331551637_d4d382a901_o.png" width="72" height="37" alt="right upgrade button">
 </div>
 <div id="hello" style="position: relative; transform: translateX(0px);">
 <img src="https://live.staticflickr.com/65535/51332495393_1eefee2436_o.png" width="72" height="37" alt="left upgrade button">
 </div>
- <div text onclick="myFunction();">
+<div text onclick="myFunction();" id="e">
 <img src="https://live.staticflickr.com/65535/51333010404_6e43e9e624_o.png" width="72" height="37" alt="up upgrade button">
 </div>
 <div id= "button" onclick="addItem();">
 <img src="https://live.staticflickr.com/65535/51333010424_db1bc40351_o.png" width="72" height="37" alt="down upgrade button">
-</div>
+</div>");
+document.getElementById("demo").innerHTML = res;
+}
+</script>
+<script>
+       function changeImage() {
+           var image = document.getElementById('button');
+           if (image.src.match("https://live.staticflickr.com/65535/51333010424_db1bc40351_o.png")) {
+               image.src = "https://live.staticflickr.com/65535/51333010424_db1bc40351_o.png";
+           }
+           else {
+               image.src = "https://live.staticflickr.com/65535/51326304583_d65c262be0_z.jpg";
+           }
+       }
+   </script>
+   <script>
+          function changeImage2() {
+                 var image = document.getElementById('e');
+              if (image.src.match("https://live.staticflickr.com/65535/51333010404_6e43e9e624_o.png")) {
+                  image.src = "https://live.staticflickr.com/65535/51333010404_6e43e9e624_o.png";
+              }
+              else {
+                  image.src = "https://live.staticflickr.com/65535/51326304578_549436f288_z.jpg";
+              }
+          }
+      </script>
+      <script>
+             function changeImage3() {
+                    var image = document.getElementById('hello');
+                 if (image.src.match("https://live.staticflickr.com/65535/51332495393_1eefee2436_o.png")) {
+                     image.src = "https://live.staticflickr.com/65535/51332495393_1eefee2436_o.png";
+                 }
+                 else {
+                     image.src = "https://live.staticflickr.com/65535/51332382048_e4046ff080_z.jpg";
+                 }
+             }
+         </script>
+         <script>
+                function changeImage4() {
+                       var image = document.getElementById('link');
+                    if (image.src.match("https://live.staticflickr.com/65535/51331551637_d4d382a901_o.png")) {
+                        image.src = "https://live.staticflickr.com/65535/51331551637_d4d382a901_o.png";
+                    }
+                    else {
+                        image.src = "https://live.staticflickr.com/65535/51330802984_81ed0b7728_z.jpg";
+                    }
+                }
+            </script>
 
 <script>
 function myFunction() {
